@@ -1,0 +1,379 @@
+
+<!DOCTYPE html> 
+<html lang="en">
+
+<!-- Mirrored from www.sathyambio.in/utils/sms_now.html?id=ID__8212742__3913156__CATALOG__12__Catalogs by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Mar 2023 12:11:58 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements --> 
+<!--[if lt IE 9]> 
+ <script type="text/javascript"  src="https://st.tistatic.com/ver9339/js/tradeindia/design_ver3/html5.js"> </script>
+<![endif]-->  
+<title></title>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<meta content="origin" name="referrer"/>
+<meta name="msvalidate.01" content="57688BD1BCF17372DF1A872D59D4C044" />
+<LINK REL="SHORTCUT ICON" HREF="https://tiimg.tistatic.com/tradeindia.com/2008/images/favicon/favicon.ico" type="image/x-icon" media="all">
+<link href="../../st.tistatic.com/ver9339/combine_css_js74fa.css?type=css&amp;files=tradeindia/design_ver3/inner_media.css,design_ver3/tradeindia.css,tradeindia/design_ver3/tradeindia_new_raw.css,design_ver3/inquiry_form/form-popup.css,design_ver3/inquiry_form/form.css,tradeindia/design_ver4/tradeindia_top_header.css,tradeindia/design_ver4/tradeindia_footer.css,tradeindia/design_ver4/media.css" rel="stylesheet" type="text/css" media="all">
+<script type="text/javascript" src="../../st.tistatic.com/ver9339/js/c2c/CallmePopup.js"></script>
+<script type="text/javascript">
+var invit_win=0;
+</script>
+<!--Start Global site tag -->
+<script async
+src="https://www.googletagmanager.com/gtag/js?id=UA-99058809-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-99058809-1', { 'groups':
+'local' });
+gtag('config', 'UA-4539722-1', { 'groups':
+'global' }); // TI Roll-up Reporting </script>
+<!-- End Global site tag -->
+<LINK REL="SHORTCUT icon" href="https://img.tradeindia.com/tradeindia.com/2008/images/favicon/favicon.ico" type="image/x-icon" media="all">
+<link  href="../../st.tistatic.com/ver9339/combine_css_jsc64b.css?type=css&amp;files=search.css" rel="stylesheet" type="text/css" media="all">
+<script type="text/javascript" src="../../st.tistatic.com/ver9339/combine_css_js6da1.php?type=javascript&amp;files=design_ver3/search.js" ></script>
+<script type="text/javascript" src="../../st.tistatic.com/ver9339/js/utils/jquery.js"></script>
+</head>
+<body>
+<div class="ti-homepage-ver4">
+<title>Free SMS on tradeindia.com</title>
+<!--
+The effect that is being used to disable submit and reset buttons 
+when submit is clicked is being adopted from Dynamicdrive.com
+Submit Once form validation- 
+? Dynamic Drive (www.dynamicdrive.com)
+For full source code, usage terms, and 100's more DHTML scripts, 
+visit http://dynamicdrive.com
+-->
+<script>
+function check_submission(frm)
+{
+	show_error[0]='Please make note of following things :\n';
+	form_name=frm.name;
+	//End of initial lines
+	var mob =  document.getElementById('phone').value ;
+       	mob = mob.replace(/\s*/g, '');
+	var email = document.getElementById('email_id').value;
+	
+	if(!email || !mob )
+	{
+		alert("Mobile and Email both are mandatory.");
+		return false ;
+	}
+	
+	if(email){
+		validate_text('email','Email','email',3);
+         }
+	if(mob.length < 10){
+		alert('Mobile number should be 10 digits.');
+                return false ;
+         }
+/*	
+	if (document.getElementsByName('captcha_in')[0])
+	{	
+		validate_text('captcha_in','Security Code','string');
+	}
+*/
+	validate_text('message','Message','string',10);
+	check_max_char(frm);
+	//Initial lines
+	error_counter('1');
+	if(back_m==1){disable();back_m=0;return true;}
+	else{error_counter('2');error_counter('0');return false;}
+	//End of initial lines
+}
+function check_max_char()
+{
+	var frm=document.first_form;
+	var maxlen = 235;
+	var obj=frm.message;
+	var pec_length=0;
+	pec_length= frm.email.value.length;
+	var char_length=frm.sms_message.value.length + pec_length;
+	if (char_length > maxlen)
+	{
+		obj.value = obj.value.substring(0, maxlen - pec_length);
+		alert('Only 235 characters are allowed in SMS Message.');
+		return false;
+	}
+	else
+	{
+	  document.getElementById('char_left').innerHTML = maxlen - char_length;
+	  return true;	
+	}
+}
+</script>
+<style type="text/css">
+.send_sms_heading {
+	font-weight: bold;
+	font-size: 14px;
+	color: black;
+	font-family: verdana;
+}
+.field_title {
+	font-weight: bold;
+	font-size: 11px;
+	color: black;
+	font-family: verdana;
+}
+.mobile-field {
+        padding:3px 3px 3px 3px;
+        margin:0px 0;
+        width: 82%;
+}
+.mobile-field input[type="number"], .mobile-field input[type="tel"] {
+        -moz-border-top-colors: none;
+        background: #fff none repeat scroll 0 0;
+        border-color: #c0c0c0 #d9d9d9 #d9d9d9;
+        border-image: none;
+        border-radius: 1px;
+        border-style: solid;
+        border-width: 1px;
+        box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        color: #404040;
+        display: inline-block;
+        font-size: 14px;
+        height:50px;
+        padding:0 0 0 40px;
+        margin:0 5px 0 0;
+ *line-height:50px;
+ *width:97% !important;
+}
+.mobile-field .mobile-app {
+        width:225px;
+}
+</style>
+<link href="../../st.tistatic.com/ver9339/combine_css_jscc4f.css?type=css&amp;files=tradeindia/design_ver4/intlTelInput.css" rel="stylesheet" type="text/css" media="all">
+<script type="text/javascript" src="../../st.tistatic.com/ver9339/combine_css_js56b2.php?type=javascript&amp;files=utils/common.js,utils/validation_lib.js" ></script>
+<!-- send email popup contact Begins-->
+<br/>
+<div id="inquiry_form_container" >
+	<form name="first_form" id="first_form_popup" action="https://www.sathyambio.in/utils/sms_now_action.html"  method="post" onSubmit="return check_submission(this)" >
+	<input name="id" value="ID__8212742__3913156__CATALOG__12__Catalogs" type="hidden">
+	  <table border="0" cellpadding="2" cellspacing="1">
+  <tr>
+    <td align="left" valign="top">
+		<input id="form_credentials_check" type="hidden" value="1" name="form_credentials_check" />
+    <table id="table_main_content" width="100%" border="0">
+  <tr>
+    <td align="left" valign="top"><table width="100%" border="0" cellpadding="2" cellspacing="1">
+      <tr>
+        <td align="left" valign="top"><table width="100%" border="0">
+          <tr></tr>
+        </table>
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+              <td colspan="3" align="left" valign="top" style=" border-bottom:1px solid #666666; padding-bottom:3px;"><h2>Send SMS to <span class="co_nam" id="contact_co_name">Sathyam Kisaan Care</span>
+				<span id="span_sending_progress" name="span_email_progress" style="z-index: 5; display: none; font-weight: bold; color: white; font-size: 14px; text-align: center; border: solid 2px; border-color:#BC6502; width: 200px; background: url(../../st.tistatic.com/ver9339/js/utils/jquery-ui/images/pbar-ani.gif);">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;
+					Sending Inquiry
+                                        &nbsp;&nbsp;&nbsp;&nbsp;
+                                </span></h2>
+	      </td>
+           </tr>
+              <tr>
+              <td colspan="3" align="left" valign="middle" class="mandatory"><label for="Message">Type Message to send via SMS <span>*</span></label><br/>
+                <textarea rows="5" cols="25" id="message" name="sms_message" wrap="VIRTUAL" onkeyup="check_max_char(this.form)" onblur="check_max_char(this.form)"></textarea>
+		<br>
+              <span><font size="1" class="black">&nbsp;&nbsp;&nbsp;Characters Remaining : <b><font id="char_left">235</font></b></font></span>
+                </td>
+            </tr>
+	<tr>
+          <td width="20%" height="40" class="orange"><b class="black"> &nbsp;Your Mobile</b></td>
+	  <td><b>:</b></td>	
+          <td width="80%">
+      <font size="1" class="black"><i>Type your mobile number </i><br>
+            <div class="mobile-field">
+                &nbsp;&nbsp;<input name="mobile" id="phone" type="tel" class="mobile-app">
+            </div>
+          </font>
+         </td>
+        </tr>
+        <tr>
+          <td width="20%" height="40" class="orange"><b class="black"> &nbsp;Your Email </b></td>
+	  <td><b>:</b></td>	
+          <td width="80%"  class="orange"><font size="1" class="black"> &nbsp;&nbsp;<i>Please type only one email address</i><br>
+          &nbsp;&nbsp; <input id="email_id" type="text" size="25" name="email" onkeyup="check_max_char(this.form)">
+          </font> </td>
+        </tr>
+        <tr id="user_otp_tr" style="display:none;">
+          <td width="20%" height="40" class="orange"><b class="black"> &nbsp;Enter OTP </b></td>
+	  <td><b>:</b></td>	
+          <td width="80%"  class="orange"><font size="1" class="black"> &nbsp;&nbsp;<i>Please enter OTP</i><br>
+          &nbsp;&nbsp; <input type="text" size="25" id="user_otp" name="user_otp">
+          </font> </td>
+        </tr>
+	 <tr style="display:none;">
+          <td class="orange"><b class="black">&nbsp;Security Code </b></td>
+	  <td><b>:</b></td>	
+          <td class="orange">&nbsp;&nbsp;
+ <script type="text/javascript" language="javascript">
+$(document).ready(function(){
+        var str = "XF824JBUdiucZTui1Y8MTW6Exsidf1wsnP1mf4JSNKTIC0oD7JV%2FWC6wHXWxd%2Bqc";
+        var img_id = "captcha_img";
+        var a_id = "captcha_audio";
+        var hidden_id = "challenge";
+        $('#'+img_id).attr('src', 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAeCAMAAADthUvBAAAAM1BMVEX%2F9s19IlKSx8fewa6tcYCN%0APGHOpp7u272%2BjI9%2FNmCdV3CKiZuMnamEX32HdIyPsriCS28xM0MKAAAACXBIWXMAAA7EAAAOxAGV%0AKw4bAAACwUlEQVRIib1W2XLkIAxE4hqTSTb%2F%2F7WLThB2sm9LuYbBSN06wQn%2Fw0jzoWFTCuNY%2FjIe%0AFRUUUgTHB9F%2F4P2qicALDO9%2BIXkKw4MsRCBiERI8Jc%2BVIuL%2Bhn8Ab9IQdRGE5C4YVhjTpii6BHfI%0AdeEwENAC9kBi0M4VUAhfFngWDUQkXCIRx5R0t7fy%2BdV952BRKdz3IyqejuRSAWppHEiBeQGPcmPJ%0AtajhHHVXBcWy%2FOzGz%2F%2BdxF5lQl7d9gbATywA3ZPQL1Ot3VoDHklIpqXUaNKtF%2F%2BnN5AjS9NXArWr%0AJis7eCIZYjBJfsjLTqaB0I%2B0s9AOwSrL91Jt7uuc4UbC4R95Bu3SnUy6s0JohrSzSBgZjza%2BXJVs%0AwsWCoSY0JzLe%2BposG5igx3hxQshoZ6GcyMiM5Sy4J4jjmJXFMiIevBVzI%2BlkMYffWN6mqli7LytB%0AwFUpkpd5wuhX7xyc1SszWAM8%2FPy81ZWaI8sKl7KQ3VV4DPAF23CONgu1mNnyBFXOya1PuIEoArUL%0ArndFcYrhIegEbyTCElUlJ7c%2BodBZCVG2L9%2FJ46pleClJsEpaJOZIU9XKlWosoYRnGJvWSwokrEKG%0AWrVSsMxFs7DZwkmMJfaJpkTnsR0%2FCV9SW2BtWMcYVfuU5d66yNK0rgxnx3Ng5wGk5bqx%2FLEkwWrD%0AUAwIQlm00ldrwHkKQzf9CnYKkyD16DB3U6Dg8JIguGpOHi71JZ78M7Z0Xg%2BwI1wSOPW%2F%2FeiVQ8vG%0ArCiQ%2BwRasewv24Hvk%2BNmBI%2BJnD7IzHR84WJRA6S65k0vkts5thctPtzxJwvRQM%2Fq52KZSyL5YF%2Fl%0AltpYzjv%2B%2FFpxlnXGIdjXiceA%2Fn2uPpHzabHskPD03fXAIskjn3yaT%2BOMGEvaWNZ3V1p9Er8gV8R2%0AFmfb8rLGwbLj4dOHodoL9kQfgi%2B7DvgEC4HHX7UkDBT3jjJ%2BAAAAAElFTkSuQmCC%0A'   );
+        $('#'+a_id).attr('href', 'https://www.tradeindia.com/utils/captcha_audio.html?c=' + str   );
+        $('#'+hidden_id).val( str  );
+});
+</script>
+<input type="hidden" id="challenge" name="challenge" />
+			<span  class="f4">
+			Please enter the letters displayed in the picture below into the box for "Security Code"<br>
+			<img id="captcha_img" />
+			<a target="_blank" id="captcha_audio">Listen to the Code</a>(Audio Link)
+			<input name="new_captcha" value="1" type="hidden">
+			<br>
+                        <input name="captcha_in" style="border: 1px solid #000000;" type="text" size="15" />
+			</span>
+          </td>
+        </tr>
+          </table>
+          <table width="100%" border="0">
+          </table></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr id="gen_otp_tr">
+    <td align="center" valign="top">
+        <button type="button" name="gen_otp" id="gen_otp"  value="1" style="background: none; border: 1px solid #000000; width:149px; height:35px;color: #090909; cursor: pointer; margin-top:10px;">Generate OTP</button>
+    </td>
+  </tr>
+   <tr >
+     <td align="center" valign="top"></td>
+   </tr>
+  <tr id="send_sms_tr" style="display:none;">
+    <td align="center" valign="top">
+        <button type="submit" name="Submit" value="Submit" id="submit_button" style="background:url(../../tiimg.tistatic.com/new_website1/common/send-sms.jpg) no-repeat scroll 0 0 transparent;border: medium none;width:149px; height:35px;color: #FFFFFF; cursor: pointer; margin-top:10px;"></button>
+    </td>
+  </tr>
+</table>
+    </td>
+  </tr>
+</table>
+       </form>
+</div>
+<script type="text/javascript" src="../../st.tistatic.com/ver9339/combine_css_js3fe6.php?type=javascript&amp;files=tradeindia/design_ver4/carouFredSelpacked.js,tradeindia/design_ver4/tradeindia.js,tradeindia/design_ver4/intlTelInput.js" ></script>
+       <!-- send email popup contact end-->
+<script type="text/javascript" langauge="javascript">
+jQuery(document).ready(function(){
+  jQuery('#email_id, #phone').blur(function(){
+        check_email_mobile_exist(jQuery(this));
+  });
+  
+  jQuery('#gen_otp').click(function(){
+		submit_otp();
+  });
+	jQuery('#submit_button').click(function(e){
+			
+					e.preventDefault();
+	var user_otp = jQuery.trim(jQuery('#user_otp').val());			
+	if(!user_otp){
+	alert("Please Fill Otp !!!");
+	return false;
+	}
+	jQuery.ajax({
+    url: '/Exporters_Suppliers/Exporters/hp/scripts/generate_otp.html',
+    type: 'POST',
+    data: { 'get_otp' : 1 , 'user_otp' : user_otp},
+    success: function(data){
+			if(data.SUCCESS && (data.SUCCESS.VERIFIED_MOBILE_OTP || data.SUCCESS.VERIFIED_EMAIL_OTP )){
+				jQuery('#first_form_popup').submit();
+			}else if(data.ERROR && data.ERROR.NOT_VERIFIED ){
+				alert("Enter valid OTP !!!");
+			
+			}else if(data.FAIL && data.FAIL.MSG){
+			
+				alert(data.FAIL.MSG);
+			}else{
+				alert("ERROR OCCURRED !!!");
+			
+			}
+    }
+    });
+	});
+	
+});
+function check_email_mobile_exist(Obj) {
+  var mob_val_trim = jQuery.trim(jQuery('#phone').val());
+  var email_val_trim = jQuery.trim(jQuery('#email_id').val());
+  var thislength = jQuery.trim(jQuery(Obj).val());
+  if(thislength.length>0)
+  {
+      jQuery('#check_exist').val('0');
+      var data_obj = {};
+      var field = '';
+      if(jQuery(Obj).attr('id') =='email_id' && email_val_trim.length>0) {
+        data_obj = {'email' : email_val_trim};
+        field = Obj.attr('id');
+      } else if(jQuery(Obj).attr('id') =='phone' && mob_val_trim.length>0){
+        data_obj = {'mobile' : mob_val_trim};
+        field = Obj.attr('id');
+      }
+      jQuery.ajax({
+        url: '/utils/check_email_mobile_exist.html',
+        type: 'POST',
+        data: data_obj,
+        success: function(data){
+          if(/FAILED/.test(data)) {
+        }
+      }
+    });
+  }
+}
+function submit_otp(){
+//var mob =  encodeURIComponent(jQuery.trim(jQuery('#phone').val())) ;
+//var email = jQuery.trim(jQuery('#email_id').val()) ;
+		var mob =  document.getElementById('phone').value ;
+		mob = mob.replace(/\s*/g, '');
+		var email = document.getElementById('email_id').value;
+jQuery.ajax({
+	url: '/Exporters_Suppliers/Exporters/hp/scripts/generate_otp.html',
+	type: 'POST',
+	data: { client_email : email , client_mobile : mob },
+	success: function(data){
+	if(data.SUCCESS){
+	alert(data.SUCCESS.msg);
+	jQuery("#user_otp_tr").show();
+	jQuery("#send_sms_tr").show();
+	jQuery("#gen_otp_tr").show();
+	jQuery("#gen_otp").text("Resend OTP");
+	}else{
+	alert(data.ERROR.msg);
+	jQuery("#gen_otp_tr").show();
+	jQuery("#gen_otp").text("Resend OTP");
+	}
+	}
+	});
+}
+</script>
+</div>
+<!-- Google Code for RMC List -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 954954047;
+var google_conversion_language = "en";
+var google_conversion_format = "3";
+var google_conversion_color = "ffffff";
+var google_conversion_label = "LQwxCIGnzAMQv-KtxwM";
+var google_conversion_value = 0;
+/* ]]> */
+<script type="text/javascript" src="../../www.googleadservices.com/pagead/f.txt">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/954954047/?label=LQwxCIGnzAMQv-KtxwM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+</body>
+
+<!-- Mirrored from www.sathyambio.in/utils/sms_now.html?id=ID__8212742__3913156__CATALOG__12__Catalogs by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Mar 2023 12:12:01 GMT -->
+</html>
